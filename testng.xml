@@ -1,0 +1,21 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Course Subscription Suite">
+    <test name="Course Test Execution">
+        <classes>
+            <!-- CourseLoginTest class -->
+            <class name="coursePaymentTests.courseLoginTests">
+                <methods>
+                    <!-- Specify the test method to run first -->
+                    <include name="testLogin"/>
+                </methods>
+            </class>
+            <!-- CourseSubscriptionTest class -->
+            <class name="coursePaymentTests.CourseSubscriptionTest">
+                <methods>
+                    <!-- Specify the test method to run next -->
+                    <include name="testCourseSubscription"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
